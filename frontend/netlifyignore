@@ -1,0 +1,7 @@
+*.swiftinterface
+arm64-apple-macos.swiftinterface
+ios/
+android/
+.expo/
+node_modules/
+web-build/

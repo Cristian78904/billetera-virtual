@@ -105,10 +105,12 @@ function LoginScreen({ onLoginSuccess, onRegisterPress }) {
               <Text style={styles.forgotPasswordText}>¿Olvidaste tu contraseña?</Text>
             </TouchableOpacity>
 
+            {/* BOTÓN DE LOGIN CON TESTID */}
             <TouchableOpacity
               style={[styles.button, loading && styles.buttonDisabled]}
               onPress={handleLogin}
               disabled={loading}
+              testID="login-button"
             >
               {loading ? (
                 <ActivityIndicator color="#fff" />
@@ -345,7 +347,12 @@ function HomeScreen({ onLogout, onTransferPress, onHistoryPress, onProfilePress 
 
         {/* Acciones rápidas - SIN DEPOSITAR */}
         <View style={styles.actionsGrid}>
-          <TouchableOpacity style={styles.actionItem} onPress={onTransferPress}>
+          {/* 👇 BOTÓN TRANSFERIR CON TESTID AGREGADO */}
+          <TouchableOpacity 
+            style={styles.actionItem} 
+            onPress={onTransferPress}
+            testID="transfer-button"  // ← NUEVO TESTID
+          >
             <View style={styles.actionIcon}>
               <Icon name="swap-horiz" size={30} color="#007AFF" />
             </View>
@@ -550,7 +557,6 @@ export default function App() {
   }
 }
 
-// ESTILOS
 const styles = StyleSheet.create({
   safeArea: { flex: 1, backgroundColor: '#f8f9fa' },
   scrollContainer: { flexGrow: 1 },
