@@ -33,6 +33,7 @@ Tokens JWT: Cada usuario recibe un token al iniciar sesión que "certifica" su i
 Validaciones: Tanto el frontend como el backend verifican que los datos ingresados sean correctos antes de procesarlos.
 
 📂 ESTRUCTURA DEL PROYECTO
+
 text
 billetera-virtual/
 ├── backend/              # Servidor
@@ -46,6 +47,8 @@ billetera-virtual/
     │   ├── screens/      # Pantallas (Login, Home, Transferencias...)
     │   └── services/     # Configuración para conectar con el backend
     └── App.js            # Componente principal
+
+    
 🚀 MI ROL
 Fui el único desarrollador del proyecto. Esto implicó:
 
@@ -62,6 +65,8 @@ Probar y depurar errores
 Documentar el proyecto
 
 🎯 ¿QUÉ APRENDÍ?
+
+
 Cómo construir una aplicación completa desde cero (full stack)
 
 Integrar frontend, backend y base de datos
